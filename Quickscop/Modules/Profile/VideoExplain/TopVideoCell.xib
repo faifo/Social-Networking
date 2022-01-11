@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TopVideoCell" rowHeight="182" id="KGk-i7-Jjw" customClass="TopVideoCell" customModule="Quickscop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="182"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="182"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video" translatesAutoresizingMaskIntoConstraints="NO" id="Qgm-te-DLR">
+                        <rect key="frame" x="13.5" y="10" width="293" height="162"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Qgm-te-DLR" secondAttribute="height" multiplier="335:185" id="mwP-db-ibI"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hG-oE-9t7">
+                        <rect key="frame" x="140.5" y="71.5" width="39" height="39"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="39" id="dQF-Fx-bL6"/>
+                            <constraint firstAttribute="height" constant="39" id="yOh-rZ-jp3"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="ic_play"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Présentation de Quickscop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCu-00-I3R">
+                        <rect key="frame" x="30" y="140" width="234" height="19"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
+                        <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Qgm-te-DLR" firstAttribute="leading" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13.5" id="5Qf-U4-DMB"/>
+                    <constraint firstItem="Qgm-te-DLR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="8cV-NF-onH"/>
+                    <constraint firstAttribute="bottom" secondItem="PCu-00-I3R" secondAttribute="bottom" constant="23" id="AY7-Ov-s7H"/>
+                    <constraint firstItem="PCu-00-I3R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="CDd-hx-one"/>
+                    <constraint firstItem="9hG-oE-9t7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Id6-RJ-GrM"/>
+                    <constraint firstItem="9hG-oE-9t7" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="KYY-wI-oG3"/>
+                    <constraint firstAttribute="bottom" secondItem="Qgm-te-DLR" secondAttribute="bottom" constant="10" id="qnr-Pv-1jC"/>
+                    <constraint firstItem="Qgm-te-DLR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="rOj-2i-kCi"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PCu-00-I3R" secondAttribute="trailing" constant="40" id="zOY-4M-p7D"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblTitle" destination="PCu-00-I3R" id="9t5-ac-8eo"/>
+                <outlet property="playBtn" destination="9hG-oE-9t7" id="nhg-GT-YGc"/>
+                <outlet property="thumbnailImgv" destination="Qgm-te-DLR" id="EZT-Tu-wEb"/>
+            </connections>
+            <point key="canvasLocation" x="61" y="136"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_play" width="39" height="39"/>
+        <image name="video" width="335" height="185"/>
+    </resources>
+</document>

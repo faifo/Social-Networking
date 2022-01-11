@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ContestAllCategoriesItem" id="gTV-IL-0wX" customClass="ContestAllCategoriesItem" customModule="Quickscop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="238" height="154"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="238" height="154"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDt-VJ-9dE">
+                        <rect key="frame" x="0.0" y="0.0" width="238" height="29"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xl5-z8-CqX">
+                                <rect key="frame" x="7" y="7" width="224" height="15"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Catégories populaires" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTv-7M-yNT">
+                                        <rect key="frame" x="0.0" y="0.0" width="163.5" height="15"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 catégories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoM-U2-Hsb">
+                                        <rect key="frame" x="163.5" y="0.0" width="60.5" height="15"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3803921569" green="0.29411764709999999" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="29" id="Enn-bE-LZf"/>
+                            <constraint firstAttribute="trailing" secondItem="Xl5-z8-CqX" secondAttribute="trailing" constant="7" id="G8K-8B-gMf"/>
+                            <constraint firstAttribute="bottom" secondItem="Xl5-z8-CqX" secondAttribute="bottom" constant="7" id="HvA-6I-p8A"/>
+                            <constraint firstItem="Xl5-z8-CqX" firstAttribute="leading" secondItem="aDt-VJ-9dE" secondAttribute="leading" constant="7" id="S0t-fe-lrH"/>
+                            <constraint firstItem="Xl5-z8-CqX" firstAttribute="top" secondItem="aDt-VJ-9dE" secondAttribute="top" constant="7" id="ltX-7b-5w7"/>
+                            <constraint firstAttribute="height" constant="29" id="xcB-43-9Lm"/>
+                        </constraints>
+                    </view>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="puO-VO-V5w">
+                        <rect key="frame" x="25" y="61" width="188" height="61"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yil-5q-PIv">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="puO-VO-V5w" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="25" id="1Zv-P8-1Cg"/>
+                <constraint firstItem="puO-VO-V5w" firstAttribute="top" secondItem="aDt-VJ-9dE" secondAttribute="bottom" constant="32" id="2q1-dG-AwD"/>
+                <constraint firstAttribute="trailing" secondItem="puO-VO-V5w" secondAttribute="trailing" constant="25" id="608-bW-GYw"/>
+                <constraint firstItem="aDt-VJ-9dE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="873-zx-beV"/>
+                <constraint firstAttribute="bottom" secondItem="puO-VO-V5w" secondAttribute="bottom" constant="32" id="Uu2-YN-bNQ"/>
+                <constraint firstItem="aDt-VJ-9dE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fN4-ub-zOY"/>
+                <constraint firstAttribute="trailing" secondItem="aDt-VJ-9dE" secondAttribute="trailing" id="plI-71-PPP"/>
+            </constraints>
+            <size key="customSize" width="238" height="154"/>
+            <connections>
+                <outlet property="collectionView" destination="puO-VO-V5w" id="kak-5T-mbi"/>
+            </connections>
+            <point key="canvasLocation" x="95.652173913043484" y="62.946428571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

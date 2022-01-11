@@ -1,0 +1,83 @@
+PODS:
+  - Alamofire (5.4.4)
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
+  - ESTabBarController-swift (2.8.0)
+  - IQKeyboardManagerSwift (6.5.6)
+  - L10n-swift (5.9.0):
+    - L10n-swift/Core (= 5.9.0)
+    - L10n-swift/Extension (= 5.9.0)
+    - L10n-swift/IBInspectable (= 5.9.0)
+  - L10n-swift/Core (5.9.0)
+  - L10n-swift/Extension (5.9.0):
+    - L10n-swift/Core
+  - L10n-swift/IBInspectable (5.9.0):
+    - L10n-swift/Core
+  - MASegmentedControl (0.0.5)
+  - MBProgressHUD (1.2.0)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - ObjectMapper (4.2.0)
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
+
+DEPENDENCIES:
+  - ChameleonFramework/Swift (from `https://github.com/wowansm/Chameleon`, branch `swift5`)
+  - ESTabBarController-swift
+  - IQKeyboardManagerSwift
+  - L10n-swift
+  - MASegmentedControl
+  - MBProgressHUD
+  - Moya
+  - ObjectMapper
+  - RxCocoa
+  - RxSwift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ESTabBarController-swift
+    - IQKeyboardManagerSwift
+    - L10n-swift
+    - MASegmentedControl
+    - MBProgressHUD
+    - Moya
+    - ObjectMapper
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+EXTERNAL SOURCES:
+  ChameleonFramework:
+    :branch: swift5
+    :git: https://github.com/wowansm/Chameleon
+
+CHECKOUT OPTIONS:
+  ChameleonFramework:
+    :commit: 96d52c36a45847fff60bcff7a58fec1e4bd7390b
+    :git: https://github.com/wowansm/Chameleon
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  ESTabBarController-swift: 05593a6ad64700b03c0eb60ff625916370aa4136
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  L10n-swift: fc27d8eb0932b8b893d3c6d936bf157e3af6bd14
+  MASegmentedControl: 9b58f9ba3a562a739b63b29e4ca2b9dc4d9c62cb
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+
+PODFILE CHECKSUM: a70ceaec3ed8c8df5c6760250b560ada0933f3aa
+
+COCOAPODS: 1.11.2

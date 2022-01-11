@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "left_bar_btn.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

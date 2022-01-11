@@ -1,0 +1,72 @@
+/* 
+  Localizable.strings
+  Example
+
+  Created by Adrian Bobrowski on 30.04.2017.
+  Copyright © 2017 Adrian Bobrowski (Decybel07), adrian071993@gmail.com. All rights reserved.
+*/
+
+//MARK: Login
+"pass"="Passer";
+"your_email"="Your email";
+"your_password"="Your password";
+"forgot_your_password"="Mot de passe oublié?";
+"view"="Afficher";
+"sign_in"="SIGN IN";
+"sign_up"="SIGN UP";
+"first_name"="Prénom";
+"last_name"="Nom";
+"user_name"="Nom d’utilisateur";
+"next"="SUIVANT";
+"skip"="skip";
+"password"="Mot de passe";
+"email"="Email";
+"confirm_password"="Confirmer mot de passe";
+"recover_password"="Récupérer mot de passe";
+
+//MARK: Tabbar
+"home"="Accueil";
+"competion"="Concours";
+"categories"="Catégories";
+"notifications"="Notifications";
+"profile"="Profil";
+
+//MARK: Home
+"subscriptions"="Abonnements";
+"home"="Accueil";
+
+//MARK: Contest
+"participate"="Participer";
+"voter"="Voter";
+
+//MARK: Categories
+"free"="Libre";
+"competition"="Concours";
+
+//MARK: Profile
+"recordings"="Enregistrements";
+"parameters"="Paramètres";
+"published"="Publié";
+"participated"="Participé";
+"subscribers"="Abonnés";
+"subscriptions"="Abonnements";
+"create"="Créer";
+"edit_profile"="Modifier profil";
+"check_my_account"="Vérifier mon compte";
+"explanatory_videos"="Vidéos explicatives";
+"personal_information"="Infos personnelles";
+
+//MARK: Verify Profile
+"first_name"="Prénom";
+"name"="Nom";
+"user_name"="Nom d’utilisateur";
+"date_of_birth"="Date de naissance";
+"document_type"="Type De Document";
+"send"="ENVOYER";
+"proof_of_address"="Preuve de domicilitation";
+"identify_document"="Pièce d’identité";
+"front_side"="Face Avant";
+"back_side"="Face Arrière";
+"certification"="Certification";
+//common
+"cancel"="Annuler";
